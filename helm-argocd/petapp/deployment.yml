@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: petapp
-        image: gayathrirudra/petapp
+        image: gayathrirudra/petapp:1e67984cd62de5ecbba736c5ed46a45983de4985
         ports:
         - containerPort: 8080
