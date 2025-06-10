@@ -4,7 +4,7 @@ kind: Service
 metadata:
   #name: petapp-service
   name: petapp-service
-  namespace: petapp
+  namespace: default
 # or "elb" for a classic load balancer
 spec:
   type: ClusterIP
