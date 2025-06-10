@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petapp-deployment
+  namespace: petapp
+  labels:
+    app: petapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: petapp
+  template:
+    metadata:
+      labels:
+        app: petapp
+    spec:
+      containers:
+      - name: petapp
+        image: gayathrirudra/petapp
+        ports:
+        - containerPort: 8080
