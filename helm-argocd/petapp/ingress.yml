@@ -2,7 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: petapp-ingress
-  namespace: default
+  #namespace: default
+  namespace: petapp
+  labels:
+    app: petapp
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:

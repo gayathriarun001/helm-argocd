@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: petapp-deployment
-  #namespace: petapp
-  namespace: default
+  namespace: petapp
+  #namespace: default
   labels:
     app: petapp
 spec:
